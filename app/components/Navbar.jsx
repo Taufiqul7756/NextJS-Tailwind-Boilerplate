@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
+import TopHeader from "./TopHeader";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,6 +40,8 @@ const Navbar = () => {
         scrolling ? "bg-gray-800" : "bg-transparent backdrop-blur-sm shadow-md "
       }`}
     >
+      <TopHeader />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
@@ -127,7 +130,7 @@ const Navbar = () => {
               href="/"
               className={`text-${
                 scrolling ? "white" : "black"
-              } hover:text-white block px-3 py-2 rounded-md text-base font-medium`}
+              } hover:text-white bg-slate-400 block px-3 py-2 rounded-md text-base font-medium`}
             >
               Home
             </Link>
@@ -136,7 +139,7 @@ const Navbar = () => {
               href="/services"
               className={`text-${
                 scrolling ? "white" : "black"
-              } hover:text-white block px-3 py-2 rounded-md text-base font-medium`}
+              } hover:text-white bg-slate-400 block px-3 py-2 rounded-md text-base font-medium`}
             >
               Services
             </Link>
@@ -145,7 +148,7 @@ const Navbar = () => {
               href="/portfolio"
               className={`text-${
                 scrolling ? "white" : "black"
-              } hover:text-white block px-3 py-2 rounded-md text-base font-medium`}
+              } hover:text-white bg-slate-400 block px-3 py-2 rounded-md text-base font-medium`}
             >
               Portfolio
             </Link>
@@ -154,7 +157,7 @@ const Navbar = () => {
               href="/about"
               className={`text-${
                 scrolling ? "white" : "black"
-              } hover:text-white block px-3 py-2 rounded-md text-base font-medium`}
+              } hover:text-white bg-slate-400 block px-3 py-2 rounded-md text-base font-medium`}
             >
               About
             </Link>
@@ -163,7 +166,7 @@ const Navbar = () => {
               href="/contact"
               className={`text-${
                 scrolling ? "white" : "black"
-              } hover:text-white block px-3 py-2 rounded-md text-base font-medium`}
+              } hover:text-white bg-slate-400 block px-3 py-2 rounded-md text-base font-medium`}
             >
               Contact
             </Link>
@@ -172,7 +175,7 @@ const Navbar = () => {
               href="/profile"
               className={`text-${
                 scrolling ? "white" : "black"
-              } hover:text-white block px-3 py-2 rounded-md text-base font-medium`}
+              } hover:text-white bg-slate-400 block px-3 py-2 rounded-md text-base font-medium`}
             >
               Profile
             </Link>
